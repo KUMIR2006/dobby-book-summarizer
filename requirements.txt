@@ -1,0 +1,4 @@
+discord
+logging
+python-dotenv
+requests
