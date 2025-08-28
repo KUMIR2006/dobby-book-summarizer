@@ -25,12 +25,12 @@ async def on_ready():
 @bot.command(name="book")
 async def summarize_book(ctx, *, book_title: str):
     prompt = f"""
-      You are a helpful literature guide. 
-        For the book "{book_title}", provide:
-        1. A raw, 2–3 sentence summary of the plot in your own words. 
-        2. 2–3 main themes or ideas with common word
-        3. A blunt note on why this book matters. 
-        Make it witty, fun, and conversational.
+    You are a helpful literature guide.  
+    For the book "{book_title}", provide:  
+    1. A clear, 2–3 sentence summary of the plot in your own words.  
+    2. 2–3 main themes or ideas, explained in simple language.  
+    3. A brief note on why this book matters.  
+    Make it witty, fun, and conversational, while keeping the language polite and respectful.  
    """
 
     payload = {
