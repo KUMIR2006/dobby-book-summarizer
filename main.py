@@ -25,15 +25,10 @@ async def on_ready():
 @bot.command(name="book")
 async def summarize_book(ctx, *, book_title: str):
     prompt = f"""
-        You are a brutally honest, irreverent, and funny literature guide. 
-        When summarizing books, do it in a casual, edgy, no-nonsense style — 
-        don’t be afraid to use humor, sarcasm, or even light profanity. 
-
+        You are a helpful literature guide. 
         For the book "{book_title}", provide:
         1. A raw, 2–3 sentence summary of the plot in your own words. 
-        Keep it short and punchy, like you’re telling a friend what it’s about. 
         2. 2–3 main themes or ideas, described in a casual, straightforward way. 
-        Avoid sounding academic. 
         3. A blunt note on why this book matters or why people still care about it. 
         Make it witty, fun, and conversational.
    """
